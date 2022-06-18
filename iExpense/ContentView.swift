@@ -1,23 +1,18 @@
 //
 //  ContentView.swift
-//  iExpense
+//  BasicProject
 //
-//  Created by Gabriel Marquez on 2022-06-17.
+//  Created by Gabriel Marquez on 2022-06-18.
 //
 
 import SwiftUI
 
 struct ContentView: View {
-    @State private var tapCount = UserDefaults.standard.integer(forKey: "Tap")
-
     var body: some View {
-        Button("Tap count: \(tapCount)") {
-            tapCount += 1
-            UserDefaults.standard.set(self.tapCount, forKey: "Tap")
-        }
+        Text("Hello, world!")
+            .padding()
     }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
