@@ -9,7 +9,15 @@ import Foundation
 
 // to represent a single expence
 struct ExpenseItem {
+    // generate UUID automatically
+    let id = UUID()
+    // let id: UUID
     let name: String
     let type: String
-    let amount: Double
+    let amount: Int
+}
+
+// class to store an array of all those items from the struct
+class Expenses: ObservableObject {
+    @Published var items = [ExpenseItem]()
 }
