@@ -8,7 +8,7 @@
 import Foundation
 
 // to represent a single expence
-struct ExpenseItem {
+struct ExpenseItem: Identifiable {
     // generate UUID automatically
     let id = UUID()
     // let id: UUID
