@@ -36,5 +36,7 @@ struct ExpenseSection: View {
 struct ExpenseSection_Previews: PreviewProvider {
     static var previews: some View {
         ExpenseSection(title: "Example", expenses: []) { _ in }
+            .preferredColorScheme(.light)
+            .previewDevice("iPhone 11 Pro")
     }
 }
